@@ -38,7 +38,7 @@ function Home() {
         catch {
             setIsloading(false)
 
-            alert("something is wrong")
+            alert("Invalid email format or Password")
         }
     }
 
@@ -57,7 +57,7 @@ function Home() {
         catch {
             setIsloading(false)
 
-            alert("something is wrong")
+            alert("Invalid Login Details")
         }
     }
 
@@ -87,7 +87,7 @@ function Home() {
                                     type="password"
                                     required
                                     ref={passwordRef}
-                                    placeholder="Enter here"
+                                    placeholder="At least 6 characters"
                                     style={{ marginBottom: "20px" }}
 
                                 />
@@ -124,7 +124,7 @@ function Home() {
                                 <label><h4>Password</h4></label>
                                 <input
                                     type="password"
-                                    placeholder="Enter here"
+                                    placeholder="At least 6 characters"
                                     required
                                     ref={signPasswordRef}
                                     style={{ marginBottom: "20px" }}
@@ -132,9 +132,7 @@ function Home() {
                                 <button
                                     onClick={handleSignup}
                                     style={{ fontWeight: "bolder" }}
-
                                 >
-
                                     {isloading ? "loading" : "Create Account"}
 
                                 </button>
